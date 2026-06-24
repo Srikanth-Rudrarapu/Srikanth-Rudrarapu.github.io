@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-behavior-smooth">
+<head>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='v1' viewBox='0 0 100 100'%3E%3Cpolygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23022c22' stroke='%2334d399' stroke-width='6'/%3E%3Cpath d='M35,35 L48,50 L35,65 M53,65 L68,65' stroke='%2334d399' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikanth Rudrarapu | Embedded Systems Security & Firmware Intelligence</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        darkCard: '#131a26',
+                        accentGreen: '#10b981',
+                        accentBlue: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-darkBg/70 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-emerald-400 font-mono font-bold text-lg tracking-wider">
+                &lt;SRIKANTH.R /&gt;
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="text-slate-400 hover:text-emerald-400 transition">About</a>
+                <a href="#firmlens" class="text-slate-400 hover:text-emerald-400 transition">FirmLens (Flagship)</a>
+                <a href="#expertise" class="text-slate-400 hover:text-emerald-400 transition">Core Expertise</a>
+                <a href="#deployments" class="text-slate-400 hover:text-emerald-400 transition">Production Systems</a>
+                <a href="#citations" class="text-slate-400 hover:text-emerald-400 transition">Research & Citations</a>
+            </nav>
+            <div>
+                <a href="https://github.com/Srikanth-Rudrarapu" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-md text-xs font-mono font-bold border border-slate-700 transition">
+                    <i class="fab fa-github mr-2"></i>GitHub Profile
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Intro Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center md:text-left md:flex md:items-center md:space-x-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-mono">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span>Active Core Security Research</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+                Srikanth Rudrarapu
+            </h1>
+            <p class="text-xl font-medium text-slate-400">
+                Embedded Security Researcher & Full-Spectrum Vulnerability Engineer
+            </p>
+            <p class="text-slate-400 leading-relaxed max-w-2xl">
+                Specialized in hardware-software interface boundaries, dynamic firmware fuzzing, architectural review, and advanced defensive security tooling. Building open-source infrastructure designed to analyze and harden critical IoT ecosystems from basic microcontrollers to production cloud layers.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                <a href="#firmlens" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-6 py-3 rounded-md shadow-md transition text-sm">
+                    Examine FirmLens Engine
+                </a>
+                <a href="https://www.linkedin.com/in/srikanth-r-16c859743/" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-6 py-3 rounded-md border border-slate-700 transition text-sm">
+                    <i class="fab fa-linkedin mr-2 text-blue-400"></i>Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-5xl mx-auto">
+
+    <!-- Flagship Project: FirmLens -->
+    <section id="firmlens" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center space-y-4 mb-12">
+            <!-- Updated to remove hardcoded version so the header is always correct -->
+            <h2 class="text-3xl font-bold tracking-tight text-white font-mono">Project: FirmLens</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">An Industrial-Grade Embedded IoT Firmware Security Analysis Engine Built From Scratch.</p>
+            
+            <!-- Real-time Status Badges wrapped in redirect links -->
+            <div class="flex justify-center flex-wrap gap-2 pt-2">
+                <!-- Redirects to GitHub Stars/Repo -->
+                <a href="https://github.com/Srikanth-Rudrarapu/firm-lens" target="_blank" class="hover:opacity-80 transition">
+                    <img src="https://img.shields.io/github/stars/Srikanth-Rudrarapu/firm-lens?style=flat&color=10b981&label=Stars&logo=github" alt="GitHub Stars">
+                </a>
+                
+                <!-- Redirects to GitHub Forks -->
+                <a href="https://github.com/Srikanth-Rudrarapu/firm-lens/network/members" target="_blank" class="hover:opacity-80 transition">
+                    <img src="https://img.shields.io/github/forks/Srikanth-Rudrarapu/firm-lens?style=flat&color=3b82f6&label=Forks&logo=github" alt="GitHub Forks">
+                </a>
+                
+                <!-- Redirects to PyPI Page (This badge dynamically handles displaying v1.0.2, v1.0.3, etc.) -->
+                <a href="https://pypi.org/project/firm-lens/" target="_blank" class="hover:opacity-80 transition">
+                    <img src="https://img.shields.io/pypi/v/firm-lens?color=emerald&label=PyPI%20Package&logo=pypi" alt="PyPI Version">
+                </a>
+
+                <!-- Redirects to PyPI Download Statistics -->
+                <a href="https://pepy.tech/project/firm-lens" target="_blank" class="hover:opacity-80 transition">
+                <img src="https://static.pepy.tech/badge/firm-lens" alt="PyPI Total Downloads">
+                </a>
+
+                <!-- Redirects to PyPI Supported Versions -->
+                <a href="https://pypi.org/project/firm-lens/" target="_blank" class="hover:opacity-80 transition">
+                    <img src="https://img.shields.io/pypi/pyversions/firm-lens?color=yellow&label=Python&logo=python&logoColor=white" alt="Supported Python Versions">
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Left Side: Engineering Highlights -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="bg-darkCard p-6 rounded-lg border border-slate-800 space-y-4">
+                    <h3 class="text-emerald-400 font-mono text-sm font-bold tracking-wider uppercase">The Technical Gap Addressed</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Firmware validation tooling has historically been heavily fragmented. Security personnel face compromises between semantic-poor static scanners or massive full-system virtualization configurations with heavy execution costs. Neither approach natively aligns with microcontrollers like the <strong>ESP32 architecture</strong>.
+                    </p>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong>FirmLens</strong> bridges this operational runtime division. It encapsulates firmware images as unified, highly queryable structures—blending static verification patterns, automated physical interaction mapping, and live hardware vulnerability context layers.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-white font-semibold text-base">Engine Technical Pillars</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start"><i class="fas fa-microchip text-emerald-400 mt-1 mr-3 w-4 text-center"></i><div><strong class="text-slate-200">Semantic Firmware Parsing:</strong> Direct memory map and partition boundary reconstruction (NVS layouts) without hardware virtualization constraints.</div></li>
+                        <li class="flex items-start"><i class="fas fa-bug text-emerald-400 mt-1 mr-3 w-4 text-center"></i><div><strong class="text-slate-200">Hardware-in-the-Loop Fuzzing:</strong> Automated generation of interface validation matrices running against dynamic physical targets via UART serialization.</div></li>
+                        <li class="flex items-start"><i class="fas fa-terminal text-emerald-400 mt-1 mr-3 w-4 text-center"></i><div><strong class="text-slate-200">Live Fault Isolation Engine:</strong> Live capture of low-level hardware exceptions (Guru Meditation Errors) from interactive terminal channels with translation directly to CWE profiles.</div></li>
+                        <li class="flex items-start"><i class="fas fa-shield-halved text-emerald-400 mt-1 mr-3 w-4 text-center"></i><div><strong class="text-slate-200">Regulatory Framework Maps:</strong> Compliance matrix generators targeting standardized verification standards including <strong>NIST SP 800-213</strong> and <strong>ETSI EN 303 645</strong>.</div></li>
+                    </ul>
+                </div>
+
+                <div class="flex gap-4 font-mono text-xs">
+                    <a href="https://github.com/Srikanth-Rudrarapu/firm-lens" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-4 py-3 rounded-md transition flex items-center">
+                        <i class="fab fa-github mr-2 text-base"></i> Explore Repository
+                    </a>
+                    <a href="https://pypi.org/project/firm-lens/" target="_blank" class="bg-emerald-950/40 hover:bg-emerald-950/60 text-emerald-400 border border-emerald-500/30 px-4 py-3 rounded-md transition flex items-center">
+                    <i class="fas fa-terminal mr-2 text-sm"></i> View PyPI Package
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Architectural Evidence Display -->
+            <div class="lg:col-span-5 space-y-4">
+                <!-- Terminal Display Component -->
+                <div class="bg-slate-950 rounded-lg border border-slate-800 shadow-xl overflow-hidden font-mono text-xs">
+                    <div class="bg-slate-900 px-4 py-2 border-b border-slate-800 flex items-center space-x-1.5">
+                        <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
+                        <span class="text-slate-500 text-[10px] pl-2">firm-lens --banner</span>
+                    </div>
+                    <!-- Text removed. The image below will scale seamlessly to fit the display size -->
+                    <div class="p-2 bg-[#0d1117] flex justify-center items-center">
+                        <img src="tool_banner.png" alt="FirmLens Terminal Banner" class="w-full h-auto object-contain rounded-b-md">
+                    </div>
+                </div>
+
+                <!-- Architectural Design Block -->
+                <div class="bg-darkCard p-4 rounded-lg border border-slate-800">
+                    <div class="text-xs text-slate-500 font-mono mb-2 flex justify-between">
+                        <span>ENGINE PIPELINE STRUCTURAL MODEL</span>
+                    </div>
+                    <div class="border border-slate-800 bg-slate-950/50 p-4 rounded text-center space-y-2 font-mono text-[11px]">
+                        <div class="bg-slate-800 py-1 px-2 rounded text-slate-300">Raw Firmware Binary / Target SoC Ingestion Boundary</div>
+                        <div class="text-slate-600">│</div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="border border-blue-500/30 p-1 rounded bg-blue-950/20 text-blue-400">Static Extraction Engine</div>
+                            <div class="border border-blue-500/30 p-1 rounded bg-blue-950/20 text-blue-400">Hardware-in-the-Loop Interceptor</div>
+                        </div>
+                        <div class="text-slate-600">│</div>
+                        <div class="bg-emerald-950/30 border border-emerald-500/30 py-1 text-emerald-400 rounded">Core Heuristics Engine (Crypto / Entropy / Memory Audits)</div>
+                        <div class="text-slate-600">│</div>
+                        <div class="bg-slate-800 py-1 px-2 rounded text-slate-300">Threat Intel Router (CISA KEV / EPSS Correlation)</div>
+                        <div class="text-slate-600">│</div>
+                        <div class="grid grid-cols-2 gap-2 text-[10px]">
+                            <div class="border border-red-500/20 p-1 rounded bg-red-950/10 text-red-400">HTML Enterprise Dashboard</div>
+                            <div class="border border-red-500/20 p-1 rounded bg-red-950/10 text-red-400">Structured JSON Artifacts</div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-5xl mx-auto">
+
+    <!-- Core Security Expertise Profile Section -->
+    <section id="expertise" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white font-mono">Full-Spectrum Penetration Testing & Assessment Matrix</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm">Industrial assessment competencies backed by deep code validation and systems-level verification pipelines.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Skill Card 1 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Web & API Penetration Testing</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Systematic hunting for logic flaws, injection surfaces, access control bypasses, and complex microservices configurations matching OWASP Top 10 and ASVS guidelines.</p>
+            </div>
+            <!-- Skill Card 2 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Network Architecture Audit</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Mapping boundary exposures, perimeter defense integrity, protocols analysis, internal lateral movement paths, and active directory infrastructure hardening.</p>
+            </div>
+            <!-- Skill Card 3 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">iOS & Android Application Pen Testing</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Dynamic and static runtime testing of application structures. Includes memory tampering, bypass verification, cryptographic flaws, and secure element storage auditing.</p>
+            </div>
+            <!-- Skill Card 4 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-yellow-500/10 text-yellow-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Secure Code Review</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Detailed review of codebases from scratch to flag deep structural flaws, race conditions, memory management errors, and cryptographic vulnerabilities before they shift to main production.</p>
+            </div>
+            <!-- Skill Card 5 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-red-500/10 text-red-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-diagram-project"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Threat Modeling & Architecture Review</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Evaluating enterprise cloud-native system blueprints to intercept systemic trust boundary problems, structural design bugs, and compliance configuration drift early.</p>
+            </div>
+            <!-- Skill Card 6 -->
+            <div class="bg-darkCard p-6 rounded-lg border border-slate-800 transition hover:border-slate-700">
+                <div class="h-10 w-10 rounded-md bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg mb-4">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="text-white font-semibold text-lg mb-2">Embedded & IoT Systems Defenses</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Advanced analysis of low-level hardware communication busses (UART, SPI, I2C), flash extraction processes, custom bootloader configurations, and dynamic protocol reverse engineering.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-5xl mx-auto">
+
+    <!-- Case Study / Production Deployments -->
+    <section id="deployments" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white font-mono">Production Deployments & Case Studies</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">Validating defensive infrastructure design through enterprise-grade commercial engineering execution.</p>
+        </div>
+
+        <div class="bg-darkCard rounded-xl border border-slate-800 overflow-hidden grid grid-cols-1 md:grid-cols-12 max-w-4xl mx-auto shadow-xl">
+            <div class="p-8 md:col-span-7 space-y-4">
+                <div class="text-xs font-mono text-emerald-400 tracking-wider uppercase font-bold">Secure Serverless Cloud Infrastructure Design</div>
+                <h3 class="text-2xl font-bold text-white">Swaradiant IT Consulting Production Build</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Designed, engineered, and deployed a completely decoupled, high-availability serverless web presence and microservices API ecosystem for a fast-growing IT consulting enterprise. Structured the entire application lifecycle around zero-trust computing paradigms on Amazon Web Services (AWS).
+                </p>
+                <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs font-mono text-slate-400">
+                <!-- Serverless Core Security: Shield with a checkmark -->
+                <li><i class="fas fa-shield-alt text-emerald-400 mr-2"></i>Serverless Core Security</li>
+                
+                <!-- IAM Least-Privilege: Secure key permissions -->
+                <li><i class="fas fa-key text-emerald-400 mr-2"></i>IAM Least-Privilege</li>
+                
+                <!-- Edge Perimeter Protection: Global or network shield footprint -->
+                <li><i class="fas fa-network-wired text-emerald-400 mr-2"></i>Edge Perimeter Protection</li>
+                
+                <!-- Hardened Mail Relays: Clean, verified standard communication icon -->
+                <li><i class="fas fa-envelope text-emerald-400 mr-2"></i>Hardened Mail Relays</li>
+                </ul>
+                <div class="pt-2">
+                    <a href="https://swaradiant.com" target="_blank" class="inline-flex items-center text-sm text-emerald-400 font-semibold hover:text-emerald-300 transition group">
+                        View Live Website <i class="fas fa-arrow-up-right-from-square ml-2 text-xs transition transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-slate-900/60 p-8 md:col-span-5 flex flex-col justify-center border-t md:border-t-0 md:border-l border-slate-800 font-mono text-xs text-slate-400 space-y-3">
+    <div class="text-[11px] text-slate-500 mb-1">// AWS ARCHITECTURE SECURITY MATRIX</div>
+    
+    <!-- Row 1 -->
+    <div class="grid grid-cols-12 border-b border-slate-800/60 pb-1.5 gap-2">
+        <span class="col-span-5 text-slate-400">Static Engine Layer:</span>
+        <span class="col-span-7 text-slate-200">AWS S3 (Origin Hardened)</span>
+    </div>
+    
+    <!-- Row 2 -->
+    <div class="grid grid-cols-12 border-b border-slate-800/60 pb-1.5 gap-2">
+        <span class="col-span-5 text-slate-400">Global Distribution:</span>
+        <span class="col-span-7 text-slate-200">AWS CloudFront (CDN)</span>
+    </div>
+    
+    <!-- Row 3 -->
+    <div class="grid grid-cols-12 border-b border-slate-800/60 pb-1.5 gap-2">
+        <span class="col-span-5 text-slate-400">Runtime Execution:</span>
+        <span class="col-span-7 text-slate-200">AWS Lambda (Serverless)</span>
+    </div>
+    
+    <!-- Row 4 -->
+    <div class="grid grid-cols-12 border-b border-slate-800/60 pb-1.5 gap-2">
+        <span class="col-span-5 text-slate-400">API Endpoint Router:</span>
+        <span class="col-span-7 text-slate-200">AWS API Gateway</span>
+    </div>
+    
+    <!-- Row 5 -->
+    <div class="grid grid-cols-12 border-b border-slate-800/60 pb-1.5 gap-2">
+        <span class="col-span-5 text-slate-400">Edge Threat Mitigation:</span>
+        <span class="col-span-7 text-slate-200">Reverse Proxy Isolation</span>
+    </div>
+    
+    <!-- Row 6 (No border-b for the clean final row) -->
+    <div class="grid grid-cols-12 gap-2 pt-0.5">
+        <span class="col-span-5 text-slate-400">Enterprise MX Profile:</span>
+        <span class="col-span-7 text-slate-200">Isolated Domain Mapping</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-5xl mx-auto">
+
+    <!-- Research Hub / Citations Index (Crucial for O-1) -->
+    <section id="citations" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center space-y-4 mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-white font-mono">Academic Research Attribution Index</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">Enabling standardized, reproducible scientific citation support across open-source hardware security publications.</p>
+        </div>
+
+        <div class="bg-darkCard rounded-lg border border-slate-800 overflow-hidden shadow-md">
+            <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex justify-between items-center text-xs font-mono">
+            <span class="text-slate-400"><i class="fas fa-quote-left mr-2 text-emerald-400"></i>Standardized BibTeX Reference Matrix</span>
+            <span class="text-slate-500">citation.bib format</span>
+            </div>
+            <div class="p-6 bg-slate-950 font-mono text-xs text-slate-300 overflow-x-auto leading-relaxed">
+                <pre class="text-emerald-400/90">
+@software{FirmLens,
+  author = {Rudrarapu, Srikanth},
+  title = {FirmLens: Industrial-Grade Embedded IoT Firmware Security Analysis Engine},
+  year = {2026},
+  version = {1.0.2},
+  url = {https://github.com/Srikanth-Rudrarapu/firm-lens}
+}</pre>
+            </div>
+            <div class="p-4 bg-slate-900/40 border-t border-slate-800 text-xs text-slate-400 leading-relaxed flex items-start">
+                <i class="fas fa-info-circle text-blue-400 mt-0.5 mr-3 flex-shrink-0 text-sm"></i>
+                <p>
+                    If you use FirmLens in research, publications, technical reports, or security assessments, please cite it using the metadata matrix schema above for accurate scientific attribution.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 text-slate-500 py-12 text-center text-xs font-mono">
+        <div class="max-w-6xl mx-auto px-6 space-y-4">
+            <p>&copy; 2026 Srikanth Rudrarapu. All Rights Reserved. Engineered for Enterprise & Industrial Security Validation.</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="https://github.com/Srikanth-Rudrarapu" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/srikanth-r-16c859743/" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Selects all anchor tags inside your hidden/desktop nav bar block
+            const navLinks = document.querySelectorAll('nav.hidden a[href^="#"]');
+            const sections = document.querySelectorAll('section[id], div[id="about"], div[id="firmlens"]');
+
+            function activateNavigation() {
+                // Generous offset window to catch active frames smoothly
+                let scrollPosition = window.scrollY + 200; 
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            // Reset state
+                            link.classList.remove('text-emerald-400');
+                            link.classList.add('text-slate-400');
+                            
+                            // Apply active emerald state to current view target
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.remove('text-slate-400');
+                                link.classList.add('text-emerald-400');
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', activateNavigation);
+            activateNavigation(); // Run immediately on load execution
+        });
+    </script>
+
+</body>
+</html>
